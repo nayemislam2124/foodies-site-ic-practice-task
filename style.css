@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+}
+body{
+    font-family:inter;
+}
+/* nav section start  */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:1rem;
+    align-items:center;
+}
+nav ul li{
+    display:inline-block;
+    margin-right:1rem;
+}
+.logo h1{
+    color:#06C167;
+    font-weight:500;
+    font-size:2rem;
+}
+.home{
+    color:#06C167;
+    position:relative;
+}
+.home::after{
+    position:absolute;
+    content:'';
+    width:.3rem;
+    height:.4rem;
+    top:1.2rem;
+    left:1.1rem;
+    right:0;
+    border-radius:3rem;
+    background-color:#06C167;
+    
+}
+nav ul li a{
+    color:#1D1D1F;
+    font-weight:400;
+    font-size:.9rem;
+    transition:all 0.4s ease;
+}
+nav ul li a:hover{
+    color:#06C167;
+}
+/* nav section end */
+/* responsive design mobile approaches start  */
+@media screen and (max-width: 576px){
+    
+nav{
+    flex-direction:column;
+    text-align:center;
+    gap:2rem;
+}
+nav ul li a{
+    line-height:2rem;
+}
+}
+/* responsive design mobile approaches end */
