@@ -181,10 +181,10 @@ nav ul li a{
 }
 .icons>img{
     position:relative;
-    top:25rem;
+    top:33rem;
     margin:0rem auto;
     justify-content:center;
-    width:100%;
+    width:90%;
 }
 }
 /* responsive design mobile approaches end */
