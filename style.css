@@ -9,6 +9,11 @@ body{
     font-family:inter;
 }
 /* nav section start  */
+header{
+    width:100%;
+    height:80vh;
+    background-color:#F3FCF7;
+}
 nav{
     display:flex;
     justify-content:space-between;
@@ -50,6 +55,84 @@ nav ul li a:hover{
     color:#06C167;
 }
 /* nav section end */
+/* header banner start  */
+.header-banner-container{
+    max-width:850px;
+    display:flex;
+    margin:5rem auto;
+    gap:5rem;
+}
+.header-banner-text{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+.header-banner-text h1{
+    font-size:3rem;
+    font-weight:600;
+}
+.header-banner-text p{
+    font-size:0.8rem;
+    color:#1D1D1FBF;
+}
+.header-banner-text button{
+    width:10rem;
+    padding:1rem;
+    border:none;
+    background-color:#06C167;
+    color:white;
+    font-weight:500;
+    font-size:1rem;
+    transition:all 0.4s ease;
+}
+.header-banner-text button:hover{
+    background-color:white;
+    color:#06C167;
+    border:2px solid #06C167;
+}
+.header-banner-text .icons{
+    position:relative;
+    top:5rem;
+}
+.icons img{
+    width:6rem;
+    margin-right:1rem;
+}
+.header-banner-image>img{
+    width:20rem;
+}
+.header-banner-image h1{
+    background-color:white;
+    font-size:.6rem;
+    padding:0.5rem;
+    border-radius:2rem;
+    position:relative;
+    bottom:15rem;
+    right:5rem;
+    width:10rem;
+    font-weight:500;
+    text-align:Center;
+}
+.good-product-quality{
+    display:flex;
+    align-items:center;
+    gap:.3rem;
+    background-color:white;
+    padding:.3rem .3rem;
+    position:relative;
+    bottom:20rem;
+    left:10rem;
+    font-size:.6rem;
+    width:50%;
+    text-align:center;
+    border-radius:3rem;
+    margin:0rem auto;
+    text-transform:uppercase;
+}
+.good-product-quality img{
+    width:1rem;
+}
+/* header banner end */
 /* responsive design mobile approaches start  */
 @media screen and (max-width: 576px){
     
@@ -57,9 +140,51 @@ nav{
     flex-direction:column;
     text-align:center;
     gap:2rem;
+    margin:0rem auto;
 }
 nav ul li a{
     line-height:2rem;
+}
+.header-banner-container{
+    flex-direction:column;
+    width:90%;
+}
+.header-banner-text{
+    text-align:center;
+    gap:2rem;
+}
+.header-banner-text button{
+    width:100%;
+    margin:0rem auto;
+}
+.header-banner-image>img{
+    width:100%;
+    position:relative;
+    bottom:8rem;
+    margin:0rem auto;
+}
+.header-banner-image h1{
+    position:relative;
+    left:1.5rem;
+}
+.good-product-quality{
+    position:relative;
+    left:0rem;
+    width:60%;
+    text-align:center;
+}
+.icons{
+    gap:1rem;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    margin:0rem auto;
+}
+.icons>img{
+    position:relative;
+    top:25rem;
+    margin:0rem auto;
+    justify-content:center;
+    width:100%;
 }
 }
 /* responsive design mobile approaches end */
