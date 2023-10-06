@@ -133,6 +133,37 @@ nav ul li a:hover{
     width:1rem;
 }
 /* header banner end */
+/* section 1 start  */
+.section-1-container{
+    max-width: 850px;
+    display:flex;
+    margin:15rem auto;
+    justify-content:space-between;
+    align-items:center;
+    border-top:1px solid rgba(128, 128, 128, 0.334);
+    border-bottom:1px solid rgba(128, 128, 128, 0.334);
+    padding:2rem 0rem;
+}
+.section-1-text{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    gap:1rem;
+}
+.section-1-image img{
+    width:3rem;
+}
+.section-1-texts h4{
+    font-size:.8rem;
+    font-weight:500;
+    color:#1D1D1F;
+}
+.section-1-texts p{
+    font-size:.7rem;
+    margin-top:.5rem;
+    color:#1D1D1F;
+}
+/* section 1 end */
 /* responsive design mobile approaches start  */
 @media screen and (max-width: 576px){
     
@@ -173,18 +204,34 @@ nav ul li a{
     width:60%;
     text-align:center;
 }
-.icons{
+/* .icons{
     gap:1rem;
     display:grid;
     grid-template-columns:repeat(2,1fr);
     margin:0rem auto;
-}
-.icons>img{
+} */
+/* .icons>img{
     position:relative;
     top:35rem;
     margin:0rem auto;
     justify-content:center;
     width:90%;
+} */
+.section-1-container{
+    margin:20rem auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:2rem;
+    width:90%;
+    justify-content:center;
+    align-items:center;
+}
+.section-1-image img{
+    width:2.5rem;
+}
+.section-1-texts h4,p{
+    font-size:0.6rem;
+    margin:0rem 0rem;
 }
 }
 /* responsive design mobile approaches end */
