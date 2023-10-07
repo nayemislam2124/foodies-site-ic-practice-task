@@ -196,6 +196,6 @@ nav ul li a{
 .icons-1 img{
     display:inline-block;
     width:80%;
-}
+    margin:0rem auto;
 }
 /* responsive design mobile approaches end */
