@@ -162,12 +162,49 @@ nav ul li a:hover{
     gap:1rem;
     line-height:1.5rem;
 }
-
 .section-1-text-group-1 h6,.section-1-text-group-2 h6,.section-1-text-group-3 h6,.section-1-text-group-4 h6{
     font-weight:500;
 }
 
 /* section 1 end */
+/* section 2 start  */
+.section-2-container{
+    max-width:850px;
+    display:flex;
+    justify-content:space-around;
+    margin:5rem auto;
+}
+.section-2-image h5{
+    width:23rem;
+    height:25rem;
+    background-color:#F3FAFB;
+    background-image:url("images/banner2.png");
+    background-repeat:no-repeat;
+    background-size:80%;
+    background-position:center top;
+    border:none;
+}
+.section-2-text{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    justify-content:end;
+}
+.section-2-text p{
+    color:#1D1D1F;
+    font-size:.8rem;
+}
+.section-2-text h1{
+    font-size:2.5rem;
+    font-weight:500;
+}
+.section-2-text h6{
+    font-size:1rem;
+    font-weight:400;
+    display:flex;
+    gap:1rem;
+}
+/* section 2 end */
 /* responsive design mobile approaches start  */
 @media screen and (max-width: 576px){
     
@@ -234,6 +271,27 @@ nav ul li a{
 }
 .section-1-img img{
     width:2.5rem;
+}
+.section-2-container{
+    flex-direction:column;
+}
+.section-2-image h5{
+    width:auto;
+    background-size:80%;
+    background-position:50% 50%;
+}
+.section-2-text{
+    text-align:center;
+    margin:2rem auto;
+    width:80%;
+}
+.section-2-text h1{
+    font-size:2rem;
+    line-height:3rem;
+}
+.section-2-text h6{
+    font-size:.8rem;
+    margin:0rem auto;
 }
 }
 /* responsive design mobile approaches end */
