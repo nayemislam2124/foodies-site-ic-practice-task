@@ -60,7 +60,8 @@ nav ul li a:hover{
     max-width:850px;
     display:flex;
     margin:5rem auto;
-    gap:5rem;
+    gap:10rem;
+    justify-content:space-between;
 }
 .header-banner-text{
     display:flex;
@@ -72,97 +73,79 @@ nav ul li a:hover{
     font-weight:600;
 }
 .header-banner-text p{
-    font-size:0.8rem;
-    color:#1D1D1FBF;
+    font-size:0.7rem;
+    line-height:1.2rem;
 }
 .header-banner-text button{
-    width:10rem;
-    padding:1rem;
+    width:max-content;
+    padding:.8rem 1.5rem;
     border:none;
-    background-color:#06C167;
+    background-color: #06C167;
     color:white;
     font-weight:500;
-    font-size:1rem;
+    display:flex;
+    align-items:center;
+    gap:1rem;
     transition:all 0.4s ease;
 }
 .header-banner-text button:hover{
     background-color:white;
     color:#06C167;
-    border:2px solid #06C167;
+    border:1px solid #06C167;
 }
 .header-banner-text .icons{
     position:relative;
-    top:5rem;
+    display:flex;
+    gap:1.5rem;
+    top:18%;
 }
 .icons img{
-    width:6rem;
-    margin-right:1rem;
+    width:7rem;
 }
 .header-banner-image>img{
     width:20rem;
 }
 .header-banner-image h1{
+    font-size:.8rem;
     background-color:white;
-    font-size:.6rem;
-    padding:0.5rem;
-    border-radius:2rem;
     position:relative;
-    bottom:15rem;
-    right:5rem;
-    width:10rem;
-    font-weight:500;
-    text-align:Center;
+    bottom:40%;
+    right:30%;
+    width:max-content;
+    padding:.3rem 1rem;
+    border-radius:3rem;
 }
 .good-product-quality{
     display:flex;
     align-items:center;
-    gap:.3rem;
-    background-color:white;
-    padding:.3rem .3rem;
+    gap:.4rem;
+    background-color: white;
     position:relative;
-    bottom:20rem;
-    left:10rem;
-    font-size:.6rem;
-    width:50%;
-    text-align:center;
+    bottom:55%;
+    left:65%;
+    width:max-content;
+    padding:.3rem .8rem;
     border-radius:3rem;
-    margin:0rem auto;
-    text-transform:uppercase;
 }
 .good-product-quality img{
-    width:1rem;
+    width:1.5rem;
+}
+.good-product-quality h4{
+    font-size:0.7rem;
+    font-weight:500;
+}
+.icons-1{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1rem;
+}
+.icons-1 img{
+    width:7rem;
+    display:none;
 }
 /* header banner end */
 /* section 1 start  */
-.section-1-container{
-    max-width: 850px;
-    display:flex;
-    margin:15rem auto;
-    justify-content:space-between;
-    align-items:center;
-    border-top:1px solid rgba(128, 128, 128, 0.334);
-    border-bottom:1px solid rgba(128, 128, 128, 0.334);
-    padding:2rem 0rem;
-}
-.section-1-text{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    gap:1rem;
-}
-.section-1-image img{
-    width:3rem;
-}
-.section-1-texts h4{
-    font-size:.8rem;
-    font-weight:500;
-    color:#1D1D1F;
-}
-.section-1-texts p{
-    font-size:.7rem;
-    margin-top:.5rem;
-    color:#1D1D1F;
-}
+
 /* section 1 end */
 /* responsive design mobile approaches start  */
 @media screen and (max-width: 576px){
@@ -179,59 +162,40 @@ nav ul li a{
 .header-banner-container{
     flex-direction:column;
     width:90%;
-}
-.header-banner-text{
     text-align:center;
-    gap:2rem;
+    gap:1rem;
+    margin:5rem auto;
 }
 .header-banner-text button{
-    width:100%;
     margin:0rem auto;
+}
+.icons img{
+    display:none;
 }
 .header-banner-image>img{
     width:100%;
-    position:relative;
-    bottom:8rem;
-    margin:0rem auto;
 }
 .header-banner-image h1{
-    position:relative;
-    left:1.5rem;
+    position:sticky;
+    top:60%;
+    width:auto;
+    font-size:0.6rem;
 }
 .good-product-quality{
-    position:relative;
-    left:0rem;
-    width:60%;
+    position:static;
+    width:auto;
     text-align:center;
-}
-/* .icons{
-    gap:1rem;
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    margin:0rem auto;
-} */
-/* .icons>img{
-    position:relative;
-    top:35rem;
-    margin:0rem auto;
+    display:flex;
     justify-content:center;
-    width:90%;
-} */
-.section-1-container{
-    margin:20rem auto;
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:2rem;
-    width:90%;
-    justify-content:center;
-    align-items:center;
+    margin:1rem auto;
 }
-.section-1-image img{
-    width:2.5rem;
+.icons-1{
+    width:90%;
+    margin:0rem auto;
 }
-.section-1-texts h4,p{
-    font-size:0.6rem;
-    margin:0rem 0rem;
+.icons-1 img{
+    display:inline-block;
+    width:80%;
 }
 }
 /* responsive design mobile approaches end */
