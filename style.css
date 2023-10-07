@@ -145,6 +145,27 @@ nav ul li a:hover{
 }
 /* header banner end */
 /* section 1 start  */
+.section-1-container{
+    max-width:850px;
+    display:flex;
+    margin:10rem auto;
+    justify-content:space-between;
+    align-items:center;
+    border-top:1px solid rgba(128, 128, 128, 0.293);
+    border-bottom:1px solid rgba(128, 128, 128, 0.294);
+    padding:2rem 0rem;
+}
+.section-1-text-group-1,.section-1-text-group-2,.section-1-text-group-3,.section-1-text-group-4{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    gap:1rem;
+    line-height:1.5rem;
+}
+
+.section-1-text-group-1 h6,.section-1-text-group-2 h6,.section-1-text-group-3 h6,.section-1-text-group-4 h6{
+    font-weight:500;
+}
 
 /* section 1 end */
 /* responsive design mobile approaches start  */
@@ -176,7 +197,7 @@ nav ul li a{
     width:100%;
 }
 .header-banner-image h1{
-    position:sticky;
+    position:static;
     top:60%;
     width:auto;
     font-size:0.6rem;
@@ -197,6 +218,22 @@ nav ul li a{
     display:inline-block;
     width:80%;
     margin:0rem auto;
+}
+.section-1-container{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    margin-top:40rem;
+    position:static;
+    width:100%;
+    gap:2rem;
+}
+.section-1-text-group-1,.section-1-text-group-2,.section-1-text-group-3,.section-1-text-group-4{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+.section-1-img img{
+    width:2.5rem;
 }
 }
 /* responsive design mobile approaches end */
